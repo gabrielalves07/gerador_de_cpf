@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --primary-color: #b6b6b6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+body{
+    background-color: var(--primary-color);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+section.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding: 20px 30px 30px 30px;
+    width: 600px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: white;
+}
+
+section>h1{
+    text-align: center;
+    font-size: 25px;
+    color: #3f3f3f;
+    padding: 15px 0px 25px 0px;
+}
+
+section>p{
+    padding-bottom: 15px;
+}
+
+div.resultado{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+div.resultado > button{
+    width: 25%;
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(129, 212, 129);
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+div.resultado > button:hover{
+    background-color: rgb(113, 187, 113);
+    transition: 0.3s linear;
+}
+
+div#outAndCopy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    letter-spacing: 5px;
+    width: 74%;
+    border-radius: 10px 0px 0px 10px;
+    background-color:#dadada;
+    padding: 0px 4px 0px 0px;
+}
+
+div#outAndCopy > input.output{
+    font-size: 22px;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 100%;
+    background-color:#dadada;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0px 7px 0px 30px;
+}
+
+div#outAndCopy > span{
+    padding: 10px;
+    cursor: pointer;
+}
